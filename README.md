@@ -5,7 +5,7 @@ First, initialize a empty git entry in a folder with VS Code
 git init
 
 ```
-Next, Pull the changes from this Repository
+Next, Pull the changes from this Repository, run this command in the VS Code terminal
 ```
 git pull https://github.com/Anirban-1490/Go-India-Advisor-Assignment.git master
 

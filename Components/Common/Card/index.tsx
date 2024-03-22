@@ -8,7 +8,7 @@ export const Card = ({
   return (
     <article className=" shadow-xl rounded-md max-[950px]:max-w-[95%]  max-w-[83%]  min-w-[17em]">
       <div className=" relative h-[8.5em] w-full ">
-        <Image src={backgorundImage} alt={title} fill />
+        <img src={backgorundImage} alt={title} className=" w-full h-full" />
       </div>
       <div className="p-5 pt-2">
         <h4 className="mb-2 font-bold">{title}</h4>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 1, 1, 1;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -17,17 +17,39 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .text-2xl {
+    @apply text-[32px] leading-[37px] -tracking-[3%];
+  }
+
+  .text-3xl {
+    @apply text-[44px] leading-[51px] -tracking-[3%];
+  }
+
+  .text-md {
+    @apply text-[14px] leading-6 -tracking-[3%];
+  }
+
+  .text-base {
+    @apply text-[0.9em];
+  }
+
+  .text-sm {
+    @apply text-[0.7em];
+  }
+
+  .text-xs {
+    @apply text-[0.6em];
+  }
+
 }

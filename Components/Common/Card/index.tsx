@@ -7,7 +7,7 @@ export const Card = ({
 }: IMarketStories<string>) => {
   return (
     <article className=" shadow-xl rounded-md max-[950px]:max-w-[95%]  max-w-[83%]  min-w-[17em]">
-      <div className=" relative h-[8.5em] ">
+      <div className=" relative h-[8.5em] w-full ">
         <Image src={backgorundImage} alt={title} fill />
       </div>
       <div className="p-5 pt-2">
